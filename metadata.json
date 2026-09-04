@@ -1,0 +1,6 @@
+{
+  "name": "FARMAKEIA",
+  "description": "Sistema profissional e completo de gestão de farmácia com controle de estoque FEFO, vendas, caixa, financeiro e Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
