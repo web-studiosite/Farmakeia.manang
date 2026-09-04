@@ -3,30 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>FARMAKEIA — Pharmacy Management System</title>
-    <meta name="description" content="Sistema profissional e completo de gestão de farmácia com controle de estoque FEFO, vendas, caixa, financeiro e Supabase." />
-    <meta property="og:title" content="FARMAKEIA — Pharmacy Management System" />
-    <meta property="og:description" content="Sistema profissional e completo de gestão de farmácia com controle de estoque FEFO, vendas, caixa, financeiro e Supabase." />
+
+    <meta
+      name="description"
+      content="Sistema profissional e completo de gestão de farmácia com controle de estoque FEFO, vendas, caixa, financeiro e Supabase."
+    />
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="FARMAKEIA — Pharmacy Management System"
+    />
+    <meta
+      property="og:description"
+      content="Sistema profissional e completo de gestão de farmácia com controle de estoque FEFO, vendas, caixa, financeiro e Supabase."
+    />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Supabase JS Client (Global UMD fallback for zero-build static hosting) -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
     <!-- FARMAKEIA Stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <!-- Main Application Mounting Container -->
     <div id="app"></div>
 
     <!-- Application Vanilla JS Entry Point -->
     <script type="module" src="./main.js"></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("./service-worker.js")
+            .catch(function (error) {
+              console.error(
+                "Erro ao registrar o Service Worker:",
+                error
+              );
+            });
+        });
+      }
+    </script>
   </body>
 </html>
-
