@@ -73,7 +73,7 @@ export const app = {
 
           <div class="auth-header" style="margin-top: 0.5rem;">
             <div class="auth-logo">
-  <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="84" height="84" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g transform="rotate(-45 24 24)">
       <path d="M16 12C16 7.58172 19.5817 4 24 4C28.4183 4 32 7.58172 32 12V24H16V12Z" fill="#10B981"/>
       <path d="M16 24H32V36C32 40.4183 28.4183 44 24 44C19.5817 44 16 40.4183 16 36V24Z" fill="#0EA5E9"/>
@@ -119,7 +119,7 @@ export const app = {
             </button>
 
             <!-- Quick Demo Login Button -->
-            <button type="button" class="btn btn-secondary" id="btn-demo-quick-login" style="width: 100%; margin-top: 0.6rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 600; background: var(--bg-hover); border: 1px dashed var(--border-color);">
+            <button type="button" class="btn btn-secondary" id="btn-demo-quick-login" style="width: 100%; margin-top: 0.6rem; display: none; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 600; background: var(--bg-hover); border: 1px dashed var(--border-color);">
               <span>⚡</span>
               <span>${isPt ? 'Entrar em Modo Demonstração (Offline)' : 'Quick Demo Mode Login (Offline)'}</span>
             </button>
