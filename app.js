@@ -61,7 +61,7 @@ export const app = {
     const isPt = i18n.getLanguage() === 'pt';
 
     container.innerHTML = `
-      <div class="auth-container">
+      <div class="auth-container" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
         <div class="card auth-card" style="position: relative;">
           <!-- Top Right Language Switcher on Login Screen -->
           <div style="position: absolute; top: 1rem; right: 1rem;">
