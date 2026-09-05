@@ -71,21 +71,22 @@ export const app = {
             </button>
           </div>
 
-          <div class="auth-header" style="margin-top: 0.5rem;">
-            <div class="auth-logo">
-  <svg width="84" height="84" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g transform="rotate(-45 24 24)">
-      <path d="M16 12C16 7.58172 19.5817 4 24 4C28.4183 4 32 7.58172 32 12V24H16V12Z" fill="#10B981"/>
-      <path d="M16 24H32V36C32 40.4183 28.4183 44 24 44C19.5817 44 16 40.4183 16 36V24Z" fill="#0EA5E9"/>
-      <line x1="14" y1="24" x2="34" y2="24" stroke="#0F172A" stroke-width="2.5"/>
-      <path d="M20 9C20 7.8 21.2 6.5 23 6.5" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
-      <path d="M20 28V34" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.4"/>
-    </g>
-  </svg>
+          <div class="auth-header" style="margin-top: 0.5rem; width: 100%; text-align: center; display: flex; flex-direction: column; align-items: center;">
+  <div class="auth-logo">
+    <svg width="100" height="100" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g transform="rotate(-45 24 24)">
+        <path d="M16 12C16 7.58172 19.5817 4 24 4C28.4183 4 32 7.58172 32 12V24H16V12Z" fill="#10B981"/>
+        <path d="M16 24H32V36C32 40.4183 28.4183 44 24 44C19.5817 44 16 40.4183 16 36V24Z" fill="#0EA5E9"/>
+        <line x1="14" y1="24" x2="34" y2="24" stroke="#0F172A" stroke-width="2.5"/>
+        <path d="M20 9C20 7.8 21.2 6.5 23 6.5" stroke="white" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+        <path d="M20 28V34" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.4"/>
+      </g>
+    </svg>
+  </div>
+
+  <h1 class="auth-title">${t('app_name')}</h1>
+  <p class="auth-subtitle">${t('app_tagline')}</p>
 </div>
-            <h1 class="auth-title">${t('app_name')}</h1>
-            <p class="auth-subtitle">${t('app_tagline')}</p>
-          </div>
 
           <div id="auth-alert" style="display: none; margin-bottom: 1rem;"></div>
 
