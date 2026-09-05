@@ -62,7 +62,7 @@ export const app = {
 
     container.innerHTML = `
       <div class="auth-container" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-        <div class="card auth-card" style="position: relative;">
+        <div class="card auth-card" style="position: relative; width: 100%; max-width: 480px;">
           <!-- Top Right Language Switcher on Login Screen -->
           <div style="position: absolute; top: 1rem; right: 1rem;">
             <button class="btn btn-secondary btn-sm" id="btn-login-toggle-lang" style="font-weight: 700; font-size: 0.8rem; padding: 0.25rem 0.55rem; display: flex; align-items: center; gap: 0.35rem;">
